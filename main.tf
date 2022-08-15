@@ -78,6 +78,13 @@ vpc_id  = aws_vpc.vpc2.id
 availability_zone = "us-east-1b"
 }
 
+resource "aws_instance" "instance2"{
+ami = "ami-090fa75af13c156b4"
+instance_type = "t2.micro"
+vpc_id  = aws_vpc.vpc2.id
+availability_zone = "us-east-1b"
+}
+
 
   
   
